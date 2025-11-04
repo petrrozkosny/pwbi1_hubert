@@ -1,0 +1,51 @@
+01 suma srazek = 
+/*
+Respektuji filtry vizualu, zadne nepridavam ani nerusim,
+tj. pouziji zakladni agregacni funkci
+*/
+SUM(data[srazky])
+
+
+
+---------
+
+
+02 suma srazek ruzyne = 
+/*
+Respektujeme filtry vizualu, tj. filtr roku a pridavame
+novy filtr, tj. potrebujeme funkci CALCULATE(), agregacni funkci
+a podminku
+*/
+
+CALCULATE(
+    SUM(data[srazky]) -- agregacni funkce
+,data[lokalita] = "RUZYNE" -- podminka
+)
+
+--------------
+
+03 suma srazek vse = 
+
+/*
+Chci se zbavit filtru vizualu a zadne nove nenastavuji, tj.
+potrebuji funkci calculate, agregacni funkci a funkci removefilters()
+*/
+
+CALCULATE(
+    SUM(data[srazky]),
+    REMOVEFILTERS(data[rok]))
+
+
+
+-----------------
+
+04 suma srazek rok 2000 = 
+
+/*
+Upravuji existujici filtry, kdy menim podminku nad sloupcem rok
+tj. potrebuji funkci CALCULATE(), agregacni funkci() a podminku
+
+*/
+CALCULATE(
+    SUM(data[srazky]), -- agregacni funkce
+data[rok] = 2000) -- podminka
