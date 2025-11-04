@@ -1,0 +1,33 @@
+Tabulka se sloupci:
+data[rok]
+data[mesic]
+
+27 suma srazek = suma srážek v roce a měsíci vizuálu
+28 suma srazek ruzyne = suma srážek v roce a měsíci vizuálu, lokalitě ruzyne
+29 suma srazek ytd = suma srážek od začátku roku vizuálu
+30 suma srazek předchozí rok = suma srážek v měsíci vizuálu, roce předcházejícímu roku vizuálu
+31 počet datumu prselo ruzyne = počet datumů v roce a měsíci vizuálu, kdy v lokalit RUZYNE byly srazky > 0
+-----------
+32 suma srazek ruzyne meziročně = výsledek výpočtu: suma srazek v roce a měsíci vizuálu, lokalitě ruzyně MÍNUS
+	suma srážek v měsíci vizuálu, předchozím roce, lokalitě ruzyně
+33 maximalni srazky = maximální srážky v daném roce a měsíci
+34 maximalni datum = maximální datum 
+35 maximalni datum maximalnich srazek = maximální srážky v maximálním datumu
+36 maximalni srazky slovensko =  maximální srážky v roce a měsíci vizuálu, v zemi Slovensko
+-------------
+
+37 podíl srazek v roce = suma srazek v roce a mesici vizualu / (děleno) suma srazek v roce vizualu, bez ohledu na mesic
+38 podíl srazek vse = jak se suma srážek v roce a měsíci vizuálu podílela na sumě srážek za všechny roky a měsíce
+
+
+BONUS: Maximální datum maximálních srážek v ruzyne, v roce a lokalite vizualu
+
+---------
+
+BONUS3 lokalita s nejvyššími srážkami v daném roce a měsíci
+
+
+
+
+
+
